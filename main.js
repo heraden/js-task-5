@@ -1,26 +1,26 @@
-function TemperatureInDescendingOrder() {
-const temp1 = prompt("Enter first temperature: ");
-const temp2 = prompt("Enter second temperature: ");
-const temp3 = prompt("Enter third temperature: ");
-
-if(temp1 >= temp2 && num1 >= temp3) {
-    if (temp2> temp3) {
-        console.log(temp1 + "," + temp2 + "," + temp3 )
-    }else{
-       console.log(temp1 + ","  + temp3 + "," + temp2)
-    }
-}
-else if (temp2 >= temp1 && temp2 >= temp3) {
-    if (temp1>temp3) {
-        console.log(temp2+ ","  +  temp1+ "," + temp3)
-    }else{
-        console.log(temp2+ ","  + temp3 + "," + temp1)
-    }
-}
-else {
-    console.log(temp3 + "," + temp2  + "," +  temp1)
-}
-}
-temperatures();
-
-
+document.getElementById("bottom").addEventListener("click", function () { 
+    event.preventDefault(); 
+ 
+        let a = document.getElementById("first").value 
+        let b = document.getElementById("second").value 
+        const c = document.getElementById("third").value 
+         
+        if(a >= b && a >= c) { 
+            if (b> c) { 
+                console.log(a  , b , c ) 
+            }else{ 
+               console.log(a , c , b) 
+            } 
+        } 
+        else if (b >= a && b >= c) { 
+            if (a>c) { 
+                console.log(b, a ,c) 
+            }else{ 
+                console.log(b, c ,a) 
+            } 
+        } 
+        else { 
+            console.log(c , b , a) 
+        } 
+             
+    })
